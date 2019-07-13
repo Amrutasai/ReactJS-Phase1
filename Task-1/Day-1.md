@@ -1,1 +1,1 @@
-<img src='C:\Users\Lenovo\Documents\WEB_RENDERING.png'/>
+<img src='https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/webkitflow.png'/>
