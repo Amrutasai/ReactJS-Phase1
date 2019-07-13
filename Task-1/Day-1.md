@@ -1,2 +1,1 @@
-__bold__ <br>
-_italics_
+<img src='C:\Users\Lenovo\Documents\WEB_RENDERING.png'/>
