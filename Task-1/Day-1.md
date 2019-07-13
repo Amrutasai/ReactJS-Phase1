@@ -13,7 +13,9 @@ This module combines the DOM Tree and the Style Rules structure to give a Render
 <li>Layout</li>
 Layout module re-arranges the nodes to be in exact order of final display on the webpage rather than the order they were defined in. This generated a Render Tree.
 <li>Painting</li>
-This module takes every single node in the Render Tree and involkes the 'paint()' method which processes the HTML and styling of the node/element to display constent on the screen.<br>
+This module takes every single node in the Render Tree and involkes the 'paint()' method which processes the HTML and styling of the node/element to display constent on the screen.
+<br>
+<br>
 Hence the HTML and Style Sheets get converted to Display by the Rendering engines of the browsers<br>
 Rendering Engines:
 <li>Internet Explorer - Trident
