@@ -6,7 +6,7 @@ Rendering refers to the display of the requestion contents on the browser screen
 __BLOCKS__
 <li>HTML PARSER</li>
 The parcer's role is to convert the document into a structure the code can use. The output of this block is usually a Parse tree or a syntax tree. These use predifined algorithms for this purpose.
-<br><li>CSS PARSER</li>
+<li>CSS PARSER</li><br>
 Similar to HTML parcer ,its role is to convert the CSS style document to a tree structure of Style Rules that have the same layout as that of the DOM tree. This tree has the style applied to each element of the webpage in order of execution.
 <br><li>Attachment</li>
 This module combines the DOM Tree and the Style Rules structure to give a Render Tree. This Render tree has nodes which describe both the HTML and the CSS styling of the element on the webpage. 
