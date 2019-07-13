@@ -11,4 +11,4 @@ Similar to HTML parcer ,its role is to convert the CSS style document to a tree 
 <li>Attachment</li>
 This module combines the DOM Tree and the Style Rules structure to give a Render Tree. This Render tree has nodes which describe both the HTML and the CSS styling of the element on the webpage.<br> 
 <li>Layout</li>
-Layout module reaaranges the nodes to be in exact order of final display on the webpage rather than the order htey were defined in.
+Layout module reaaranges the nodes to be in exact order of final display on the webpage rather than the order they were defined in.
