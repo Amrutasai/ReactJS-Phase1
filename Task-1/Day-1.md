@@ -1,5 +1,10 @@
 <img src='https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/webkitflow.png'/>
 <caption>           Web-Rendering Block Diagram</caption>
-
+<article>
+    <p>
+        Rendering refers to the display of the requestion contents on the browser screen.<br>This is done using Rendering engines.
+    </p>
+</article>
 ___BLOCKS___
-<li>HTML</li>
+<li>HTML</li><br>
+<p></p>
