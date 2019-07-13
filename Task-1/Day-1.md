@@ -5,6 +5,6 @@
         Rendering refers to the display of the requestion contents on the browser screen.<br>This is done using Rendering engines.
     </p>
 </article>
-___BLOCKS___
+__BLOCKS__
 <li>HTML</li><br>
 <p></p>
