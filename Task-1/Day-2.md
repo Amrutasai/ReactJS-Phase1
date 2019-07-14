@@ -3,7 +3,7 @@ It is very difficult for a programmer to code in machine language which operated
 Hence the concept of high level language(C,Java,Python, etc.) was introduced in which the programmer can type in engish. 
 To translate this code to machine understandable code we need a translator.Interpreters and Compilers do this job.  
 The difference between a compiled and Interpreted language lies in the method a given code is executed.<br>
-An Interpreter:
+<br>An Interpreter:
 <li>Source code is the program itself.</li>
 <li>They require an interpreter every time they are executed.</li>
 <li>Code is re-executed every time.</li>
