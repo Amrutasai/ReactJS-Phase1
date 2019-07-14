@@ -44,12 +44,12 @@ The compiled code is not portable.</li>
   </li>
 </ol>
 <br></br>Examples:
-<br></br>{
+<br>{
 var a=1;
 let b=2;}
 <br>console.log(a);
 <br>console.log(b);
-__gives result__<br></br>
-1
+<br>OUTPUT:
+<br>1
 <br>error
 <br>Expected behaviour of var is block scope but we get global scope. Due to this unexpected behaviour we avoid using _var_ and use only let and const.
