@@ -56,4 +56,5 @@ let b=2;}
 <br>OUTPUT:
 <br>1
 <br>error
-<br>Expected behaviour of var is block scope but we get global scope. Due to this unexpected behaviour we avoid using _var_ and use only let and const.
+<br>Expected behaviour of var is block scope but we get global scope. Due to this unexpected behaviour we avoid using var and use only let and const.
+<br></br>
