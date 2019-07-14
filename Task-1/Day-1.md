@@ -1,3 +1,5 @@
+**1.	Explain the rendering of websites in the browser using a complete block diagram. Every block should be explained in your own words. List down all the names of JS engines and their creators.**
+
 <img src='https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/webkitflow.png'/>
 <caption>           Web-Rendering Block Diagram</caption>
 
@@ -22,3 +24,8 @@ Rendering Engines:
 <li>Firefox - Gecko
 <li>Safari - WebKit 
 <li>Chrome and Opera - Blink
+JavaScript Engines:
+<li>Internet Explorer(Microsoft) - Chakra
+<li>Firefox - SpiderMonkey
+<li>Safari - JavaScript Core
+<li>Chrome and Opera - V8 Engine
