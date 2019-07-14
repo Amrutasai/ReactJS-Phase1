@@ -11,8 +11,8 @@ The difference between a compiled and Interpreted language lies in the method a 
 <li>The code will execute if the computer does not have an interpreter for that language.</li>
 <li>Slower than compiled programs but easier to debug.</li>
 <li>Examples:JavaScript, Python, Perl.</li><br>
-<br>A Compiler:<br>
-<li>The programmer has to write the code in high level language and then compile it to translate it into machine code.<br>
+<br>A Compiler:
+<li><br>The programmer has to write the code in high level language and then compile it to translate it into machine code.<br>
 This machine level code(BYTE code) is the source code and it is not human readable.
 <li>The machine level code is specific to its own processor because of different architechture.
 The compiled code is not portable.
