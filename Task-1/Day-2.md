@@ -43,7 +43,7 @@ The compiled code is not portable.</li>
   <br>Variable similar to let but has global scope.Its value can be changed throughout the program.It is recommended not to use this variable type.
   </li>
 </ol>
-<br></br>Examples:
+<br>Examples:
 <br>let a=1; 
 <br>const pi=3.14;
 <br>var b=3;
@@ -57,4 +57,6 @@ let b=2;}
 <br>1
 <br>error
 <br>Expected behaviour of var is block scope but we get global scope. Due to this unexpected behaviour we avoid using var and use only let and const.
-<br></br>
+
+**<br>4.	What are the different types of Scopes in Javascript? Explain with examples each in detail.**
+
