@@ -43,13 +43,13 @@ The compiled code is not portable.</li>
   <br>Variable similar to let but has global scope.Its value can be changed throughout the program.It is recommended not to use this variable type.
   </li>
 </ol>
-<br>Examples:
-<br>{
+<br></br>Examples:
+<br></br>{
 var a=1;
 let b=2;}
-console.log(a);
-console.log(b);
-__gives result__<br>
+<br>console.log(a);
+<br>console.log(b);
+__gives result__<br></br>
 1
-error
-Expected behaviour of var is block scope but we get global scope. Due to this unexpected behaviour we avoid using _var_ and use only let and const.
+<br>error
+<br>Expected behaviour of var is block scope but we get global scope. Due to this unexpected behaviour we avoid using _var_ and use only let and const.
