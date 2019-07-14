@@ -1,14 +1,13 @@
-**2.	What is the difference between interpreted and compiled language? Give examples for each.**
+**2.	What is the difference between interpreted and compiled language? Give examples for each.**<br>
 It is very difficult for a programmer to code in machine language which operated in '0' and '1'. 
 Hence the concept of high level language(C,Java,Python, etc.) was introduced in which the programmer can type in engish. 
 To translate this code to machine understandable code we need a translator.Interpreters and Compilers do this job.  
-The difference between a compiled and Interpreted language lies in the method a given code is executed.
-An Interpreter:<br>
+The difference between a compiled and Interpreted language lies in the method a given code is executed.<br>
+<br>An Interpreter:
 <li>Source code is the program itself.
 <li>They require an interpreter every time they are executed.
 <li>Code is re-executed every time.
 <li>It is very portable provided the destination computer has an interpreter to exzecute the code.
-<li>The code will **not** execute if the computer does not have an interpreter for that language.
 <li>Slower than compiled programs but easier to debug.
 <li>Examples:JavaScript, Python, Perl.
 <br>A Compiler:
