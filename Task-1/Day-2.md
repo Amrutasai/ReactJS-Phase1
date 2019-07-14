@@ -162,7 +162,7 @@ function help()<br>
 let x=1;<br>
 let y=2;<br>
 console.log(x);<br>}<br>
-The this keyword does not refer to the currently executing function, so must refer to Function objects by name, even within the function body
+The 'this' keyword does not refer to the currently executing function, so must refer to Function objects by name, even within the function body
 </li><br>
 
 <li>
