@@ -135,6 +135,7 @@ OUTPUT:<br>
 
 **<br>5.	What are the different types of function? Explain each in detail with example. Explain the working of this in each type.**
 <br>
+<br>We use functions so that we need not re-write the same code again and again in the code. However to reference a declared value in itself we use 'this' keyword.The values pointed to by the 'this' keyword can change depending on the type of function and how they are called/involked.
 <br>Function Types:<br>
 <ol>
 <li>Anonymous function<br>
@@ -167,7 +168,7 @@ The 'this' keyword does not refer to the currently executing function, so must r
 
 <li>
 Declaration in class/objects<br>
-These are declared in class or objects. They don't need function keyword for declaration and have to be accessed using class/object instance.<br>
+These are declared in class or objects. They don't need function keyword for declaration and have to be accessed using class/object instance.'this' key word in this case would point at the instance of the class/object the function belongs to.<br>
 <br>name(var1,var2,...)<br>
 {<br>body<br>}
 <br>Example:
@@ -175,7 +176,7 @@ These are declared in class or objects. They don't need function keyword for dec
 {<br>let x=1;<br>
 let y=2;<br>
 console.log(x)<br>}
-
+<br>'this' in cases like this would point to the object or class declaration this function is a part of.
 </li><br>
 <li>
 Arrow Function<br>
@@ -191,6 +192,9 @@ getName:()=>{<br>
 &nbsp&nbsp&nbsp&nbsp&nbsp return `${a.lname}`<br>}
 <br>}<br>
 OUTPUT:<br>
-undefined,Sai
+undefined,Sai<br>
+<br>
 </li>
 </ol>
+
+**6.	What is NodeJS? Explain the event loop with example.**<br>
