@@ -44,6 +44,10 @@ The compiled code is not portable.</li>
   </li>
 </ol>
 <br></br>Examples:
+<br>let a=1; 
+<br>const pi=3.14;
+<br>var b=3;
+<br>The variable type is automatically understood be it string,numerical,fload,boolean,etc.
 <br>{
 var a=1;
 let b=2;}
