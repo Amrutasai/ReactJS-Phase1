@@ -198,6 +198,10 @@ undefined,Sai<br>
 </ol>
 
 **6.	What is NodeJS? Explain the event loop with example.**<br>
-JavaScript wqas designed with intention of it running only on browsers.<br>It was not designed to be executed on desktops, which made it hard for its debugging.Hence NodeJS was introduced.<br>
+<br>JavaScript wqas designed with intention of it running only on browsers.<br>It was not designed to be executed on desktops, which made it hard for its debugging.Hence NodeJS was introduced.<br>
 NodeJS is a free, open source, Java runtime environment that executes JavaScript code outside of browsers.<br>
-NodeJS has an event-driven architecture that supports asynchronous I/O operations which is very important considering JavaScript is a single thread language(Does not support multiple thread execution at a time.).
+NodeJS has an event-driven architecture that supports asynchronous I/O operations which is very important considering JavaScript is a single thread language(Does not support multiple thread execution at a time.).<br>
+NodeJS performs
+non-blocking I/O operations by offloading operations to the system kernel whenever possible through Event Loop.
+
+Since most modern kernels are multi-threaded, they can handle multiple operations executing in the background. When one of these operations completes, the kernel pings NodeJS so that the appropriate callback may be added to the loop to eventually be executed.
