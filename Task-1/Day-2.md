@@ -14,7 +14,7 @@ The difference between a compiled and Interpreted language lies in the method a 
 A Compiler:<br></br>
 <li>The programmer has to write the code in high level language and then compile it to translate it into machine code.
 This machine level code(BYTE code) is the source code and it is not human readable.</li>
-<li>The machine level code is specific to its own processor because of different architechture.
+<li>The machine level code is specific to its own processor because of different architecture.
 The compiled code is not portable.</li>
 <li>The program is processed only once to generate compiled source code for execution.The same compiled code is used for future use</li>
 <li>They are faster than a program run through an interpreter.</li>
@@ -24,6 +24,7 @@ The compiled code is not portable.</li>
 <br></br>
 
 **3.	What are the different ways of defining a variable? Explain with examples. What is the disadvantage of using var?**<br></br>
+Naming Rules:
 <li>Names should begin with lowercase string.</li>
 <li>Names cannot contain symbols or begin with symbols.</li>
 <li>Names cannot begin with a number.</li>
@@ -44,18 +45,18 @@ The compiled code is not portable.</li>
   </li>
 </ol>
 <br>Examples:
-<br>let a=1; 
-<br>const pi=3.14;
-<br>var b=3;
+<li>let a=1; 
+<li>const pi=3.14;
+<li>var b=3;
 <br>The variable type is automatically understood be it string,numerical,fload,boolean,etc.
-<br>{
+<br><li>{
 var a=1;
 let b=2;}
-<br>console.log(a);
-<br>console.log(b);
-<br>OUTPUT:
-<br>1
-<br>error
+<br>&nbsp&nbsp&nbsp console.log(a);
+<br>&nbsp&nbsp&nbsp console.log(b);
+<br><li>OUTPUT:
+<br>&nbsp&nbsp&nbsp&nbsp 1
+<br>&nbsp&nbsp&nbsp&nbsp error
 <br>Expected behaviour of var is block scope but we get global scope. Due to this unexpected behaviour we avoid using var and use only let and const.
 
 **<br>4.	What are the different types of Scopes in Javascript? Explain with examples each in detail.**
@@ -64,7 +65,7 @@ There are various types of scopes in JavaScript.
 <ol>
 <li>Global Scope<br>
 All variables are by default Global in scope. This means it is accessible anywhere in the JavaScript code.<br>
-Examples:<br>
+<br>Examples:<br>
 let a=10;<br>
 function FunctionalScope()<br>
 {
@@ -74,11 +75,11 @@ console.log(a); //Global Scope<br>
 OUTPUT:<br>
 10<br>
 10
-</li>
+</li><br>
 <li>
 Block Scope<br>
 Certain variables which are defined in block cannot be accessed outside block.<br>
-Examples:<br>
+<br>Examples:<br>
 {<br>
 var a=1;<br>
 let b=2;<br>
@@ -88,11 +89,11 @@ console.log(b);<br>
 OUTPUT<br>
 1 //unexpected behaviour of var.Hence not recommended.<br> 
 error<br>
-</li>
+</li><br>
 <li>
 Funtional Scope<br>
 Certain variables are restricted to function body where they are declared.<br>
-Examples:<br>
+<br>Examples:<br>
 {<br>
 var a=1;<br>
 let b=10;<br>}<br>
@@ -134,25 +135,62 @@ OUTPUT:<br>
 
 **5.	What are the different types of function? Explain each in detail with example. Explain the working of this in each type.**
 <br>
-<br>Function<br>
+<br>Function Types:<br>
 <ol>
 <li>Anonymous function<br>
-These functions can be involked using the variable name.They do not need function names.<br>
-let a=function(var1,var2,...)<br>
-{<br>body<br>}
-</li>
+These functions can be involked using the variable name.They do not need function names.This in this type of function refers to the object it is called on behalf of<br>
+<br>let a=function(var1,var2,...)<br>
+{<br>body<br>}<br>
+Example:<br>
+let a=function()<br>
+{<br>
+let x=1;<br>
+let y=2;<br>
+console.log(x);<br>
+}<br>
+In this case the 'this' in this case would refer to the object 'a'.We can access element x&y using 'this.x' and 'this.y'.
+
+</li><br>
 <li>
 Normal function<br>
 These functions use 'function' keyword and also need func_name at declaration<br>
-function func_name(var1,var2,...)<br>
+<br>function func_name(var1,var2,...)<br>
 {<br>body<br>}
-</li>
+<br>Example:<br>
+function help()<br>
+{<br>
+let x=1;<br>
+let y=2;<br>
+console.log(x);<br>}<br>
+The this keyword does not refer to the currently executing function, so must refer to Function objects by name, even within the function body
+</li><br>
+
 <li>
 Declaration in class/objects<br>
 These are declared in class or objects. They don't need function keyword for declaration and have to be accessed using class/object instance.<br>
-name(var1,var2,...)<br>
+<br>name(var1,var2,...)<br>
 {<br>body<br>}
-</li>
+<br>Example:
+<br>help()<br>
+{<br>let x=1;<br>
+let y=2;<br>
+console.log(x)<br>}
+
+</li><br>
 <li>
+Arrow Function<br>
+An arrow function is a type of anonymous function. Takes 'this' from parent class, hence must not be used in functions with defined values.<br>
+let name:()=> //Object function<br>{<br>body<br>}
+<br>let name=()=> //Class function<br>{<br>body<br>}
+<br>Example:
+<br>let a={<br>
+fname:'Amruta',<br>
+lname:'Sai',<br>
+getName:()=>{<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp return `${this.fname}` //Global Scope<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp return `${a.lname}`<br>}
+<br>}<br>
+OUTPUT:<br>
+undefined,Sai
 </li>
 </ol>
