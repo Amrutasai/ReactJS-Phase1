@@ -4,12 +4,12 @@ Hence the concept of high level language(C,Java,Python, etc.) was introduced in 
 To translate this code to machine understandable code we need a translator.Interpreters and Compilers do this job.  
 The difference between a compiled and Interpreted language lies in the method a given code is executed.<br>
 __An Interpreter__:
-<li>Source code is the program itself.
-<li>They require an interpreter every time they are executed.
-<li>Code is re-executed every time.
-<li>It is very portable provided the destination computer has an interpreter to exzecute the code.
-<li>The code will execute if the computer does not have an interpreter for that language.
-<li>Slower than compiled programs but easier to debug.
+<li>Source code is the program itself.</li>
+<li>They require an interpreter every time they are executed.</li>
+<li>Code is re-executed every time.</li>
+<li>It is very portable provided the destination computer has an interpreter to exzecute the code.</li>
+<li>The code will execute if the computer does not have an interpreter for that language.</li>
+<li>Slower than compiled programs but easier to debug.</li>
 <li>Examples:JavaScript, Python, Perl.</li>
 __A Compiler__:
 <li>The programmer has to write the code in high level language and then compile it to translate it into machine code.<br>
