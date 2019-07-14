@@ -133,7 +133,7 @@ OUTPUT:<br>
 3.14<br>
 4<br>
 
-**5.	What are the different types of function? Explain each in detail with example. Explain the working of this in each type.**
+**<br>5.	What are the different types of function? Explain each in detail with example. Explain the working of this in each type.**
 <br>
 <br>Function Types:<br>
 <ol>
