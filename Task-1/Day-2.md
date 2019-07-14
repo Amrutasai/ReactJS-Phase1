@@ -59,4 +59,100 @@ let b=2;}
 <br>Expected behaviour of var is block scope but we get global scope. Due to this unexpected behaviour we avoid using var and use only let and const.
 
 **<br>4.	What are the different types of Scopes in Javascript? Explain with examples each in detail.**
+<br></br>
+There are various types of scopes in JavaScript.
+<ol>
+<li>Global Scope<br>
+All variables are by default Global in scope. This means it is accessible anywhere in the JavaScript code.<br>
+Examples:<br>
+let a=10;<br>
+function FunctionalScope()<br>
+{
+  <br>console.log(a);// Local Scope<br>
+}<br>
+console.log(a); //Global Scope<br>
+OUTPUT:<br>
+10<br>
+10
+</li>
+<li>
+Block Scope<br>
+Certain variables which are defined in block cannot be accessed outside block.<br>
+Examples:<br>
+{<br>
+var a=1;<br>
+let b=2;<br>
+}<br>
+console.log(a);<br>
+console.log(b);<br>
+OUTPUT<br>
+1 //unexpected behaviour of var.Hence not recommended.<br> 
+error<br>
+</li>
+<li>
+Funtional Scope<br>
+Certain variables are restricted to function body where they are declared.<br>
+Examples:<br>
+{<br>
+var a=1;<br>
+let b=10;<br>}<br>
+console.log(a);<br>
+function help()<br>{<br>
+let a=4;<br>
+let b=2;<br>}<br>
+console.log(a);<br>
+OUTPUT:<br>
+1<br>
+1 //accesses global scope a=1
+</li>
+</ol>
+EXAMPLE:<br>
+let pi=3.14; // Global Scope<br>
+{<br>
+var a=1;<br>
+let b=10;<br>
+console.log(pi);<br>
+}<br>
+console.log(a); //Block Scope<br>
+function help()<br>
+{<br>
+var a=4;<br>
+let b=2:<br>
+console.log(pi); //Global Scope<br>
+console.log(a); //Functional Scope<br>
+}<br>
+console.log(a); //Block Scope<br>
+console.log(pi); //Global Scope;<br>
+help();<br>
+OUTPUT:<br>
+3.14<br>
+1<br>
+1<br>
+3.14<br>
+3.14<br>
+4<br>
 
+**5.	What are the different types of function? Explain each in detail with example. Explain the working of this in each type.**
+<br>
+<br>Function<br>
+<ol>
+<li>Anonymous function<br>
+These functions can be involked using the variable name.They do not need function names.<br>
+let a=function(var1,var2,...)<br>
+{<br>body<br>}
+</li>
+<li>
+Normal function<br>
+These functions use 'function' keyword and also need func_name at declaration<br>
+function func_name(var1,var2,...)<br>
+{<br>body<br>}
+</li>
+<li>
+Declaration in class/objects<br>
+These are declared in class or objects. They don't need function keyword for declaration and have to be accessed using class/object instance.<br>
+name(var1,var2,...)<br>
+{<br>body<br>}
+</li>
+<li>
+</li>
+</ol>
