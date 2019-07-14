@@ -7,7 +7,7 @@ The difference between a compiled and Interpreted language lies in the method a 
 <li>Source code is the program itself.</li>
 <li>They require an interpreter every time they are executed.</li>
 <li>Code is re-executed every time.</li>
-<li>It is very portable provided the destination computer has an interpreter to exzecute the code.</li>
+<li>It is very portable provided the destination computer has an interpreter to execute the code.</li>
 <li>The code will execute if the computer does not have an interpreter for that language.</li>
 <li>Slower than compiled programs but easier to debug.</li>
 <li>Examples:JavaScript, Python, Perl.</li><br>
@@ -28,18 +28,18 @@ The compiled code is not portable.</li>
 <li>Names cannot contain symbols or begin with symbols.</li>
 <li>Names cannot begin with a number.</li>
 <li>Names can contain a mix of uppercase strings, lowercase strings, and numbers.</li>
-There are 3 types of variables in JavaScript.
+<br>There are 3 types of variables in JavaScript.
 <ol>
   <li>
-  let:<br></br>
+  let:
   Variables whose value can be changed at any point in the program.Because JavaScript   uses interpreter, the value may be changed at any point.The value of variable need     not be defuned at the time of declaration.Are not global in nature. 
   </li>
   <li>
-  const:<br></br>
+  const:
   Variable whose value cannot be changed at any point in the program after       declaration.They must be declared at initialization.
   </li>
   <li>
-  var:<br></br>
+  var:
   Variable similar to let but has global scope.Its value can be changed throughout the program.It is recommended not to use this variable type.
   </li>
 </ol>
