@@ -36,10 +36,10 @@ The compiled code is not portable.</li>
   </li>
   <li>
   const:
-  Variable whose value cannot be changed at any point in the program after       declaration.They must be declared at initialization.
+  <br>Variable whose value cannot be changed at any point in the program after       declaration.They must be declared at initialization.
   </li>
   <li>
   var:
-  Variable similar to let but has global scope.Its value can be changed throughout the program.It is recommended not to use this variable type.
+  <br>Variable similar to let but has global scope.Its value can be changed throughout the program.It is recommended not to use this variable type.
   </li>
 </ol>
