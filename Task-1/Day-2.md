@@ -1,4 +1,4 @@
-**2.	What is the difference between interpreted and compiled language? Give examples for each.**
+**2.	What is the difference between interpreted and compiled language? Give examples for each.**<br></br>
 It is very difficult for a programmer to code in machine language which operated in '0' and '1'. 
 Hence the concept of high level language(C,Java,Python, etc.) was introduced in which the programmer can type in engish. 
 To translate this code to machine understandable code we need a translator.Interpreters and Compilers do this job.  
@@ -23,4 +23,23 @@ The compiled code is not portable.</li>
 <li>Examples:C, Fortran,C++,Java.</li>
 <br></br>
 
-**3.	What are the different ways of defining a variable? Explain with examples. What is the disadvantage of using var?**
+**3.	What are the different ways of defining a variable? Explain with examples. What is the disadvantage of using var?**<br></br>
+<li>Names should begin with lowercase string.</li>
+<li>Names cannot contain symbols or begin with symbols.</li>
+<li>Names cannot begin with a number.</li>
+<li>Names can contain a mix of uppercase strings, lowercase strings, and numbers.</li>
+There are 3 types of variables in JavaScript.
+<ol>
+  <li>
+  let:<br></br>
+  Variables whose value can be changed at any point in the program.Because JavaScript   uses interpreter, the value may be changed at any point.The value of variable need     not be defuned at the time of declaration.Are not global in nature. 
+  </li>
+  <li>
+  const:<br></br>
+  Variable whose value cannot be changed at any point in the program after       declaration.They must be declared at initialization.
+  </li>
+  <li>
+  var:<br></br>
+  Variable similar to let but has global scope.Its value can be changed throughout the program.It is recommended not to use this variable type.
+  </li>
+</ol>
