@@ -48,7 +48,7 @@ Naming Rules:
 <li>let a=1; 
 <li>const pi=3.14;
 <li>var b=3;
-<br>The variable type is automatically understood be it string,numerical,fload,boolean,etc.
+<br>The variable type is automatically understood be it string,numerical,float,boolean,etc.
 <br><li>{
 var a=1;
 let b=2;}
