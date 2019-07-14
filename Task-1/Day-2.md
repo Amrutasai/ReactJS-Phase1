@@ -11,14 +11,16 @@ The difference between a compiled and Interpreted language lies in the method a 
 <li>The code will execute if the computer does not have an interpreter for that language.</li>
 <li>Slower than compiled programs but easier to debug.</li>
 <li>Examples:JavaScript, Python, Perl.</li><br>
-A Compiler:<br>
+A Compiler:<br></br>
 <li>The programmer has to write the code in high level language and then compile it to translate it into machine code.
-This machine level code(BYTE code) is the source code and it is not human readable.
+This machine level code(BYTE code) is the source code and it is not human readable.</li>
 <li>The machine level code is specific to its own processor because of different architechture.
-The compiled code is not portable.
-<li>The program is processed only once to generate compiled source code for execution.The same compiled code is used for future use.
-<li>They are faster than a program run through an interpreter.
-<li>It is possible to recompile the code in another computer to exeecute it on different platforms.
-<li>The byte code is executed by the Operating System.
-<li>Examples:C, Fortran,C++,Java.
+The compiled code is not portable.</li>
+<li>The program is processed only once to generate compiled source code for execution.The same compiled code is used for future use</li>
+<li>They are faster than a program run through an interpreter.</li>
+<li>It is possible to recompile the code in another computer to exeecute it on different platforms.</li>
+<li>The byte code is executed by the Operating System.</li>
+<li>Examples:C, Fortran,C++,Java.</li>
+<br></br>
 
+**3.	What are the different ways of defining a variable? Explain with examples. What is the disadvantage of using var?**
