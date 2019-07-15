@@ -47,12 +47,12 @@ let p = new Promise((resolve, reject)=><br>
      reject();<br> 
   } <br>
 }); 
-  
 p.then( ()=><br> { 
         console.log('Success'); 
     })<br>. 
     catch( ()=><br> { 
         console.log('Some error has occured'); 
     }); 
+
 <br>OUTPUT<br>
 Success
