@@ -1,7 +1,9 @@
 **1.	Explain the rendering of websites in the browser using a complete block diagram. Every block should be explained in your own words. List down all the names of JS engines and their creators.**
+<br></br>
 <p>
     <img src='https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/webkitflow.png'/>
-    <em>Web-Rendering Block Diagram</em>
+    <em><br>Web-Rendering Block Diagram</em>
+</p>
 </p>
 <br>
 
