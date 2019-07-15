@@ -38,7 +38,7 @@ Examples:<br>
 Promises are returned by asynchronous method,during fetching APIs, etc.
 
 let p = new Promise((resolve, reject)=><br>
- { <br>
+ { //new creates an instance of class Promise.<br>
   const x = 10;<br> 
   const y = 10;<br>
   if(x === y) { <br>
@@ -47,7 +47,7 @@ let p = new Promise((resolve, reject)=><br>
      reject();<br> 
   } <br>
 }); 
-p.then( ()=><br> { 
+<br>p.then( ()=><br> { 
         console.log('Success'); 
     })<br>. 
     catch( ()=><br> { 
