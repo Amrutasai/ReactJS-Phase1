@@ -8,7 +8,7 @@ The difference between a compiled and Interpreted language lies in the method a 
 <li>They require an interpreter every time they are executed.</li>
 <li>Code is re-executed every time.</li>
 <li>It is very portable provided the destination computer has an interpreter to execute the code.</li>
-<li>The code will execute if the computer does not have an interpreter for that language.</li>
+<li>The code will not execute if the computer does not have an interpreter for that language.</li>
 <li>Slower than compiled programs but easier to debug.</li>
 <li>Examples:JavaScript, Python, Perl.</li><br>
 A Compiler:<br></br>
@@ -33,15 +33,24 @@ Naming Rules:
 <ol>
   <li>
   let:
-  <br>Variables whose value can be changed at any point in the program.Because JavaScript   uses interpreter, the value may be changed at any point.The value of variable need     not be defined at the time of declaration.Are not global in nature. 
+  <br>Variables whose value can be changed at any point in the program. 
+  <br>As JavaScript uses interpreter, the value may be changed at any point.
+  <br>The value of variable need not be defined at the time of declaration.<br>Are not global in nature.
+  <br>Example : let a=2;
   </li>
   <li>
   const:
-  <br>Variable whose value cannot be changed at any point in the program after       declaration.They must be declared at initialization.
+  <br>Variable whose value cannot be changed at any point in the program after declaration.
+  <br>They must be declared at initialization.
+  <br>These are global in nature.
+  <br>Example : const a=3.14;
   </li>
   <li>
   var:
-  <br>Variable similar to let but has global scope.Its value can be changed throughout the program.It is recommended not to use this variable type.
+  <br>Variable similar to let but has global scope.
+  <br>Its value can be changed throughout the program.
+  <br>It is recommended not to use this variable type.
+  <br>Example : var a=2;
   </li>
 </ol>
 <br>Examples:
@@ -221,17 +230,20 @@ States <br>
 
 Since the event loop exhausts the queue of one state before moving to the others, it is not necessary that the Timer based callbacks will execute exactly after their time duration is covered. In fact, they can be delayed by the execution of other processes in other queues and the time specified in the function is the minimum delay in its execution.<br>
 
-For example:<br>
+For Example:<br>
+
 Code:<br>
 console.log("i am first");<br>
 setTimeout(function timeout() {
     console.log("i am second");
 }, 0);<br>
 console.log("i am third");<br>
+
 Output:<br>
 i am first<br>
 i am third<br>
 i am second<br>
+
 Explanation:<br>
 Even though the timeout for statement 2 is 0ms,it is added to the loop after third statement because 0ms is the minimum time delay for statement 2 and it getss added to callback queue whereas statement 3 has no delay and hence directly executed on the loop.
 
