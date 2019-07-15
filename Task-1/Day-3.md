@@ -25,9 +25,7 @@ There are 3 states of a promise:
 
 Skeleton of a promise:
 
-let a= new Promise((resolve,reject)=><br>{
-  <br>
-  
+let a= new Promise((resolve,reject)=><br>{  
   **resolve(data);** //if data fetch is success. data:processed data that is pointed to by the promise.<br>
   **reject(data);** //if data not fetched. In this case data is an error object.<br>
 })
