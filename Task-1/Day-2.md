@@ -33,7 +33,7 @@ Naming Rules:
 <ol>
   <li>
   let:
-  <br>Variables whose value can be changed at any point in the program.Because JavaScript   uses interpreter, the value may be changed at any point.The value of variable need     not be defuned at the time of declaration.Are not global in nature. 
+  <br>Variables whose value can be changed at any point in the program.Because JavaScript   uses interpreter, the value may be changed at any point.The value of variable need     not be defined at the time of declaration.Are not global in nature. 
   </li>
   <li>
   const:
@@ -139,7 +139,7 @@ OUTPUT:<br>
 <br>Function Types:<br>
 <ol>
 <li>Anonymous function<br>
-These functions can be involked using the variable name.They do not need function names.This in this type of function refers to the object it is called on behalf of<br>
+These functions can be invoked using the variable name.They do not need function names.This in this type of function refers to the object it is called on behalf of<br>
 <br>let a=function(var1,var2,...)<br>
 {<br>&nbsp body<br>}<br>
 Example:<br>
@@ -293,3 +293,5 @@ p.then( ()=><br> {
     catch( ()=><br> { 
         console.log('Some error has occured'); 
     }); 
+<br>OUTPUT<br>
+Success
