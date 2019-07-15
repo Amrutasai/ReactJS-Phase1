@@ -141,13 +141,13 @@ OUTPUT:<br>
 <li>Anonymous function<br>
 These functions can be involked using the variable name.They do not need function names.This in this type of function refers to the object it is called on behalf of<br>
 <br>let a=function(var1,var2,...)<br>
-{<br>body<br>}<br>
+{<br>&nbsp body<br>}<br>
 Example:<br>
 let a=function()<br>
 {<br>
-let x=1;<br>
-let y=2;<br>
-console.log(x);<br>
+&nbsp let x=1;<br>
+&nbsp let y=2;<br>
+&nbsp console.log(x);<br>
 }<br>
 In this case the 'this' in this case would refer to the object 'a'.We can access element x&y using 'this.x' and 'this.y'.
 
@@ -156,13 +156,13 @@ In this case the 'this' in this case would refer to the object 'a'.We can access
 Normal function<br>
 These functions use 'function' keyword and also need func_name at declaration<br>
 <br>function func_name(var1,var2,...)<br>
-{<br>body<br>}
+{<br>&nbsp body<br>}
 <br>Example:<br>
 function help()<br>
 {<br>
-let x=1;<br>
-let y=2;<br>
-console.log(x);<br>}<br>
+&nbsp let x=1;<br>
+&nbsp let y=2;<br>
+&nbsp console.log(x);<br>}<br>
 The 'this' keyword does not refer to the currently executing function, so must refer to Function objects by name, even within the function body
 </li><br>
 
@@ -170,24 +170,27 @@ The 'this' keyword does not refer to the currently executing function, so must r
 Declaration in class/objects<br>
 These are declared in class or objects. They don't need function keyword for declaration and have to be accessed using class/object instance.'this' key word in this case would point at the instance of the class/object the function belongs to.<br>
 <br>name(var1,var2,...)<br>
-{<br>body<br>}
+{<br>&nbsp body<br>}
 <br>Example:
 <br>help()<br>
-{<br>let x=1;<br>
-let y=2;<br>
-console.log(x)<br>}
+{<br>
+&nbsp let x=1;<br>
+&nbsp let y=2;<br>
+&nbsp console.log(x)<br>}
 <br>'this' in cases like this would point to the object or class declaration this function is a part of.
 </li><br>
 <li>
 Arrow Function<br>
 An arrow function is a type of anonymous function. Takes 'this' from parent class, hence must not be used in functions with defined values.<br>
-let name:()=> //Object function<br>{<br>body<br>}
-<br>let name=()=> //Class function<br>{<br>body<br>}
+let name:()=> //Object function<br>{<br>&nbsp body<br>}
+<br>let name=()=> //Class function<br>
+{<br>
+&nbsp body<br>}
 <br>Example:
 <br>let a={<br>
-fname:'Amruta',<br>
-lname:'Sai',<br>
-getName:()=>{<br>
+&nbsp fname:'Amruta',<br>
+&nbsp lname:'Sai',<br>
+&nbsp getName:()=>{<br>
 &nbsp&nbsp&nbsp&nbsp&nbsp return `${this.fname}` //Global Scope<br>
 &nbsp&nbsp&nbsp&nbsp&nbsp return `${a.lname}`<br>}
 <br>}<br>
@@ -199,11 +202,76 @@ undefined,Sai<br>
 
 **6.	What is NodeJS? Explain the event loop with example.**<br>
 
-<br>JavaScript wqas designed with intention of it running only on browsers.<br>It was not designed to be executed on desktops, which made it hard for its debugging.Hence NodeJS was introduced.
+<br>JavaScript was designed with intention of it running only on browsers.<br>It was not designed to be executed on desktops, which made it hard for its debugging.Hence NodeJS was introduced.
 
-NodeJS is a free, open source, Java runtime environment that executes JavaScript code outside of browsers.<br>
-NodeJS has an event-driven architecture that supports asynchronous I/O operations which is very important considering JavaScript is a single thread language(Does not support multiple thread execution at a time.).<br>
-NodeJS performs
-non-blocking I/O operations by offloading operations to the system kernel whenever possible through Event Loop.
+NodeJS is a free, open source, Java runtime environment built on V8 engine that executes JavaScript code outside of browsers.<br>
+NodeJS has an event-driven architecture that supports asynchronous I/O operations which is very important considering JavaScript is a *single thread* language(Does not support multiple thread execution at a time.).<br>
 
-Since most modern kernels are multi-threaded, they can handle multiple operations executing in the background. When one of these operations completes, the kernel pings NodeJS so that the appropriate callback may be added to the loop to eventually be executed.
+When NodeJS is initialized, it starts the event loop, which is a loop that runs infinitely executing the taskes that are assigned to execute at various states along its path. This event loop is responsible for the response given by the operations hence those which are I/O based or take large amount of time must be executed in asynch(task assigned to kernel to run in background).
+The operation assigned to the async method returns a *promise* object.<br>
+Since most modern kernels are multi-threaded, they can handle multiple operations executing in the background. When one of these operations completes, the kernel pings NodeJS so that the appropriate callback may be added to the queue to eventually be executed, hence maintaining concurrency.
+After every loop NodeJS checks for pending operations waiting in callback queue(asynchronous I/O or timers) and terminates if there arn't any.
+
+States <br>
+<li>Timers: Queue of callbacks scheduled by setTimeout() and setInterval().<br>
+<li>Pending callbacks: Queue of postponed callbacks.<br>
+<li>Poll: Queue of new I/O events; execute I/O related callbacks.<br>
+<li>Check: setImmediate() callbacks are invoked here.<br>
+<li>Close callbacks: some close callbacks, e.g. socket.on('close', ...).<br>
+
+Since the event loop exhausts the queue of one state before moving to the others, it is not necessary that the Timer based callbacks will execute exactly after their time duration is covered. In fact, they can be delayed by the execution of other processes in other queues and the time specified in the function is the minimum delay in its execution.<br>
+
+For example:<br>
+Code:<br>
+console.log("i am first");<br>
+setTimeout(function timeout() {
+    console.log("i am second");
+}, 0);<br>
+console.log("i am third");<br>
+Output:<br>
+i am first<br>
+i am third<br>
+i am second<br>
+Explanation:<br>
+Even though the timeout for statement 2 is 0ms,it is added to the loop after third statement because 0ms is the minimum time delay for statement 2 and it getss added to callback queue whereas statement 3 has no delay and hence directly executed on the loop.
+
+**7.	What is Promise? How do you create a promise? Explain with an example.**
+
+A Promise is a class that creates an object which helps us keep track of the details of an asynchronous event.
+It takes one function with 2 arguments.
+
+<li>Resolved
+<li>Rejected.
+
+There are 3 states of a promise:
+<li>Pending:
+<br>&nbsp&nbsp&nbsp&nbsp Event has not taken place yet.
+<br>&nbsp&nbsp&nbsp&nbsp OR
+<br>&nbsp&nbsp&nbsp&nbsp Data hasn't been requested yet.
+
+<li>Resolved:
+<br>&nbsp&nbsp&nbsp&nbsp Event was sucessfully executed.
+<br>&nbsp&nbsp&nbsp&nbsp OR
+<br>
+&nbsp&nbsp&nbsp&nbsp Data was fetched successfully.We can now define functions that are to be executed in this case using 'then' clause.
+
+<li>Rejected:
+<br>&nbsp&nbsp&nbsp&nbspEvent encountered errors.
+<br>&nbsp&nbsp&nbsp&nbspOR
+<br>&nbsp&nbsp&nbsp&nbspData was not fetched. We can define function to handle this error using 'catch' clause
+
+Skeleton of a promise:
+
+let a= new Promise((resolve,reject)=><br>{
+  <br>
+  
+  **resolve(data);** //if data fetch is success. data:processed data that is pointed to by the promise.<br>
+  **reject(data);** //if data not fetched. In this case data is an error object.<br>
+})
+<br>**a.then**((data)=><br>
+{<br>console.log(data);<br>})
+**.catch**((data)=><br>
+{<br>console.log(data);<br>})
+
+Examples:<br>
+Promises are returned by asynchronous method,during fetching APIs
