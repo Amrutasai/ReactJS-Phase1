@@ -256,9 +256,9 @@ There are 3 states of a promise:
 &nbsp&nbsp&nbsp&nbsp Data was fetched successfully.We can now define functions that are to be executed in this case using 'then' clause.
 
 <li>Rejected:
-<br>&nbsp&nbsp&nbsp&nbspEvent encountered errors.
-<br>&nbsp&nbsp&nbsp&nbspOR
-<br>&nbsp&nbsp&nbsp&nbspData was not fetched. We can define function to handle this error using 'catch' clause
+<br>&nbsp&nbsp&nbsp&nbsp Event encountered errors.
+<br>&nbsp&nbsp&nbsp&nbsp OR
+<br>&nbsp&nbsp&nbsp&nbsp Data was not fetched. We can define function to handle this error using 'catch' clause
 
 Skeleton of a promise:
 
@@ -274,4 +274,22 @@ let a= new Promise((resolve,reject)=><br>{
 {<br>console.log(data);<br>})
 
 Examples:<br>
-Promises are returned by asynchronous method,during fetching APIs
+Promises are returned by asynchronous method,during fetching APIs, etc.
+
+let p = new Promise((resolve, reject)=><br>
+ { <br>
+  const x = 10;<br> 
+  const y = 10;<br>
+  if(x === y) { <br>
+    resolve();<br> 
+  } <br>else { <br>
+     reject();<br> 
+  } <br>
+}); 
+  
+p.then( ()=><br> { 
+        console.log('Success'); 
+    })<br>. 
+    catch( ()=><br> { 
+        console.log('Some error has occured'); 
+    }); 
