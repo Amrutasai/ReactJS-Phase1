@@ -1,3 +1,13 @@
+// 3&4.	Create an object representing your favorite GoT or any other character from a movie or TV series. (first name, last name, yearsOfExperience, noOfMovies., latestMovie, noOfAwards. The more you add the better)
+// 	
+//  .	Add a function, getFullName, which returns the full name of the character
+// a.	Add a function, getBio, which returns a short bio of the character using the properties defined above.
+// b.	Add other functions which return the rest properties defined in the object.
+// c.	Print the first name of the character.
+// d.	Extract noOfMovies, yearsOfExperience from the object.
+// e.	Create another object with a different character and merge the two objects.
+
+
 let a={
         fname:'Lyanna',
         lname:'Mormon',
@@ -34,13 +44,18 @@ let a={
             return `${this.portrayedBy} played the role of ${this.getFullName()} in the show Game of Thrones. We meet her character in '${this.firstSeen}' and bid her goodbye in '${this.latestEpi}'.She gained an experience of ${this.episodesOfExperience} over ${this.seasonsOfExperience} seasons. Her talent as an actress was recognised when she was nominated for ${this.noOfAwards} awards.`
          }
 }
-console.log('FIRST NAME: '+a.fname);
-console.log('FULL NAME: '+a.getFullName());
-console.log('BIO: \n'+a.getBio());
-console.log('CHARACTER INFORMATION: \n'+a.getCharacterInfo());
-console.log('ACTRESS INFORMATION: \n'+a.getActressInfo());
-console.log('NO. OF YEARS: '+a.seasonsOfExperience+' \nNO. OF EPISODES: '+a.episodesOfExperience);
-
+console.log('\nFIRST NAME: '+a.fname);
+// Add a function, getFullName, which returns the full name of the character
+console.log('\nFULL NAME: '+a.getFullName());
+// Add a function, getBio, which returns a short bio of the character using the properties defined above.
+console.log('\nBIO: \n'+a.getBio());
+// Add other functions which return the rest properties defined in the object.
+console.log('\nCHARACTER INFORMATION: \n'+a.getCharacterInfo());
+console.log('\nACTRESS INFORMATION: \n'+a.getActressInfo());
+// Extract noOfMovies, yearsOfExperience from the object.
+let {seasonsOfExperience,episodesOfExperience}=a;
+console.log('\nNO. OF YEARS: '+seasonsOfExperience+' \nNO. OF EPISODES: '+episodesOfExperience);
+// Create another object with a different character 
 let b={
         fname:'Sansa',
         lname:'Stark',
@@ -80,12 +95,12 @@ let b={
 
 }
 
- console.log('FIRST NAME: '+b.fname);
- console.log('FULL NAME: '+b.getFullName());
- console.log('BIO: \n'+b.getBio());
- console.log('CHARACTER INFORMATION: \n'+b.getCharacterInfo());
- console.log('ACTRESS INFORMATION: \n'+b.getActressInfo());
- console.log('NO. OF YEARS: '+b.seasonsOfExperience+' \nNO. OF EPISODES: '+b.episodesOfExperience);
-
+ console.log('\nFIRST NAME: '+b.fname);
+ console.log('\nFULL NAME: '+b.getFullName());
+ console.log('\nBIO: \n'+b.getBio());
+ console.log('\nCHARACTER INFORMATION: \n'+b.getCharacterInfo());
+ console.log('\nACTRESS INFORMATION: \n'+b.getActressInfo());
+ console.log('\nNO. OF YEARS: '+b.seasonsOfExperience+' \nNO. OF EPISODES: '+b.episodesOfExperience);
+// merge the two objects.
  let c={...a,...b};
  console.log(c);
