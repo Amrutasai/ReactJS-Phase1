@@ -86,3 +86,6 @@ let b={
  console.log('CHARACTER INFORMATION: \n'+b.getCharacterInfo());
  console.log('ACTRESS INFORMATION: \n'+b.getActressInfo());
  console.log('NO. OF YEARS: '+b.seasonsOfExperience+' \nNO. OF EPISODES: '+b.episodesOfExperience);
+
+ let c={...a,...b};
+ console.log(c);
