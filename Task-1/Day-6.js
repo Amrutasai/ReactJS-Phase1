@@ -105,17 +105,17 @@ console.log(d.getBio()+'\n');
 
 // 7.	Print React is the best after 5 seconds.
 setTimeout(()=>{
-    console.log("React is the best");
+    console.log("react is the best");
 },5000);
 // 8.	Print React is the best after 3 seconds continuously.
 let inter1=setInterval(()=>
         {
-             console.log("React is the best!!");
+             console.log("REACT IS THE BEST");
         },3000);
 setTimeout(()=>{clearInterval(inter1)},10000);
 
 // 9.	Print React is the best 10 times and stop (using setInterval and loops, both)
 let inter=setInterval(()=>{
-    console.log('React is the best!!!');
+    console.log('REACT is the BEST');
 },1000);
 setTimeout(()=>{clearInterval(inter)},11000);
