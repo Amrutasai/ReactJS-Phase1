@@ -21,10 +21,10 @@ a.map((index)=>
         a[index]===17?console.log(index):{};
 });
 console.log('g.	Remove the item at index 11 from the array:');
-a.splice(10,1);
+a.splice(11,1);
 console.log(a);
 console.log('h.	Remove 5 items starting from index 4:');
-a.splice(3,5);
+a.splice(4,5);
 console.log(a);
 console.log('i.	Create a new array, b, having a multiplication of number and its index from array a:');
 let b=a.map((value,index)=>
