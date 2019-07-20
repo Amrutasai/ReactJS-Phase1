@@ -110,7 +110,7 @@ setTimeout(()=>{
 // 8.	Print React is the best after 3 seconds continuously.
 let inter1=setInterval(()=>
         {
-             console.log("React is the best");
+             console.log("React is the best!!");
         },3000);
 setTimeout(()=>{clearInterval(inter1)},10000);
 
