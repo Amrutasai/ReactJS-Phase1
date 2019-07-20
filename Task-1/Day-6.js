@@ -112,7 +112,6 @@ let inter1=setInterval(()=>
         {
              console.log("REACT IS THE BEST");
         },3000);
-setTimeout(()=>{clearInterval(inter1)},10000);
 
 // 9.	Print React is the best 10 times and stop (using setInterval and loops, both)
 let inter=setInterval(()=>{
