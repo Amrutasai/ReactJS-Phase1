@@ -1,0 +1,17 @@
+.grey.darken-3 {
+    background-color: #424242 !important;
+}
+.page-footer {
+    padding-top: 20px;
+    color: #fff;
+}
+.container {
+    width: 90% ;
+    margin: 0;
+}
+.greytext{
+    color: rgb(173, 169, 169);
+}
+ .gmaps{
+    height: 100%;
+} 
