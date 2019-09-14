@@ -1,0 +1,73 @@
+.bio{
+    background-image: url(https://portal.siesgst.ac.in/assets/user-profile-bg.jpg);
+    width: 300px;
+    float: left;
+    color: #fff;
+    padding-bottom: 15px;
+
+}
+i{
+    padding-right: 40px;
+}
+.a-circle {
+    background:#029191;
+    color: #fff;
+    padding: 5px 20px 5px ;
+    /* padding: 5px 20px; */
+    border-radius: 50%;
+    font-size: 35px;
+    text-align: center;
+    margin-left: 15px;
+        
+}
+.text{
+    padding-left: 15px;
+
+}
+.sidepanel{
+    background-color: #fff;
+    z-index: 99999;
+}
+pre {
+    display: inline;
+    margin: 0;
+}
+
+a:link{
+    text-decoration: none;
+    color:  rgba(10, 10, 10, 0.678);
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    width:300px;
+    line-height: 48px;
+    padding: 0 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    text-align: justify;
+    /* margin-left: 30px; */
+    padding-top: 10px;
+}
+a:hover{
+    background-color: rgba(196, 193, 193, 0.589);
+    width: 300px;
+
+}
+a:visited{
+    color: rgba(10, 10, 10, 0.678);
+}
+.sidepanel{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 120vh;
+        width:300px;
+        z-index: 99999;
+        display:flex;
+        transform: translateX(0%);
+        flex-direction:column;        
+        box-shadow: 1px 1px 1px 5000px rgba(0, 0, 0, 0.8);
+}
